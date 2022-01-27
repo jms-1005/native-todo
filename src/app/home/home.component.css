@@ -1,0 +1,31 @@
+.greetings{
+    font-size: 30;
+    padding: 20;
+}
+
+.inputtask{
+    font-size: 20;
+}
+
+.btn{
+    padding: 10;
+    font-size: 25;
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    border-radius: 5;
+    width: 80%;
+}
+
+.taskitem{
+    padding: 20;
+    font-size: 20;
+    border-bottom-width: 1px;
+    border-color: gray;
+}
+
+.complete{
+    background-color: lightgray;
+    color: #aaaaaa;
+    text-decoration: line-through;
+}

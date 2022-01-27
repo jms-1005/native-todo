@@ -1,0 +1,29 @@
+<ActionBar title="My Home">
+</ActionBar>
+
+<GridLayout>
+	<ScrollView>
+		<StackLayout class="home-panel">
+			<Label [text]="text" class="greetings"></Label>
+            <TextField
+                hint="Add a todo task"
+                [(ngModel)]="newtask"
+                class="inputtask"
+            ></TextField>
+
+            <Button
+                text="Add Todo task"
+                (tap)="addTask()"
+                class="btn"
+            ></Button>
+
+            <Label
+                *ngFor="let task of tasks; let i=index"
+                [text]="task.task"
+                class="taskitem"
+                (doubletap)="markComplete(i)"
+                [class.complete]="task.isComplete"
+            ></Label>
+		</StackLayout>
+	</ScrollView>
+</GridLayout>
