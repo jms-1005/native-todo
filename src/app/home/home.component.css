@@ -29,3 +29,17 @@
     color: #aaaaaa;
     text-decoration: line-through;
 }
+
+@keyframes fadeout{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+.deleted{
+    background-color: rgb(253, 200, 200);
+    animation: fadeout 500ms;
+}

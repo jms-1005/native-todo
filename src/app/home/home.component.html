@@ -23,6 +23,8 @@
                 class="taskitem"
                 (doubletap)="markComplete(i)"
                 [class.complete]="task.isComplete"
+                (swipe)="deleteTask($event, i)"
+                [class.deleted]="task.isDeleted"
             ></Label>
 		</StackLayout>
 	</ScrollView>
